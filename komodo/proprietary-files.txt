@@ -203,3 +203,6 @@ recovery/system/etc/vintf/manifest/android.hardware.health-service.zumapro.xml:r
 vendor/bin/dump/dump_modem|126ba65ea84c3fee868611f527aaed2312e4b2ad
 vendor/bin/gpuflag|7f1689f909dbc423b49f56b4192c5b2bb5501851
 vendor/bin/hw/vendor.google.mte_launcher|f9cdf2e9ce61e0a4018429a6541e6d4574d77c36
+
+# Pixel Camera
+product/priv-app/GoogleCamera/GoogleCamera.apk;OVERRIDES=Aperture,Camera2;PRESIGNED
