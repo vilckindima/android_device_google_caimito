@@ -20,19 +20,7 @@ TARGET_HAS_UDFPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := false
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
 
-# Rising and its GMS install apps into /system, and Rising's Pixel trees turn the
-# generic_system artifact path check off. The entries below are the known ones,
-# so the check can be turned back on by removing the next line.
+# Rising and its GMS install apps and properties into the system partition,
+# which generic_system.mk does not allow. This turns off the Make side of the
+# artifact path check; lineage_<device>.mk turns off the Soong side.
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
-
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/etc/permissions/privapp-permissions-appbackup.xml \
-    system/priv-app/AppDataBackup/AppDataBackup.apk
-
-# GMS replaces these AOSP system apps with Google versions, which have to stay in /system
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/app/GoogleExtShared/GoogleExtShared.apk \
-    system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk \
-    system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
-    system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk \
-    system/priv-app/TagGoogle/TagGoogle.apk
