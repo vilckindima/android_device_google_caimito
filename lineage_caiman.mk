@@ -16,6 +16,11 @@ VENDOR_PATH := vendor/google/caiman
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
 $(call inherit-product, $(DEVICE_PATH)/device-rising.mk)
 
+# RisingOS adds properties to the system partition, which the Soong artifact
+# path check of generic_system.mk rejects. Set it here: in device-rising.mk the
+# "relaxed" value inherited from zumapro/aosp_common.mk would win.
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
+
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 PRODUCT_SYSTEM_BRAND := google
