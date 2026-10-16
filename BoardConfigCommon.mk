@@ -33,3 +33,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
 
 # WiFi
 include $(DEVICE_PATH)/wifi/BoardConfig-wifi.mk
+
+# SystemUI-owned Pulsar preference
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/google/caimito/sepolicy/system_ext/private

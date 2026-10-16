@@ -1,0 +1,3 @@
+# The common Lineage Health arbiter owns Google policy transitions.
+allow system_server hal_googlebattery_service:service_manager find;
+binder_call(system_server, hal_googlebattery)

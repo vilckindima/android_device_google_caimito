@@ -1,0 +1,3 @@
+# Settings runs as system_app; the existing QS tile runs as platform_app.
+# Both use the same Lineage PowerShare HAL on every caimito variant.
+hal_client_domain(system_app, hal_lineage_powershare)
