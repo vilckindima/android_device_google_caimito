@@ -1,0 +1,7 @@
+# SystemUI owns the Pulsar user preference, as in the stock system_ext policy.
+# The historical property name does not determine its SELinux owner.
+system_internal_prop(evox_pulsar_prop)
+set_prop(platform_app, evox_pulsar_prop)
+
+# Vendor init's existing property trigger writes a literal 0 or 1 to AACP.
+# No vendor daemon needs permission to read this system-internal property.

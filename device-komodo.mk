@@ -30,6 +30,7 @@ PRODUCT_PACKAGES += \
     ConnectivityResourcesOverlayCaimitoOverride \
     FrameworkResOverlayProductCaimito \
     FrameworkResOverlayVendorCaimito \
+    LineageSdkOverlayCaimito \
     PixelNfcOverlayCaimito \
     PixelWifiOverlay2024Caimito \
     SafetyRegulatoryInfoOverlayProductCaimito \
