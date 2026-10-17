@@ -5,6 +5,8 @@
 #
 
 # Inherit some common stuff
+TARGET_DISABLE_EPPE := true
+TARGET_INCLUDE_MOSEY := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
@@ -12,6 +14,12 @@ DEVICE_CODENAME := tokay
 DEVICE_PATH := device/google/caimito
 VENDOR_PATH := vendor/google/tokay
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
+$(call inherit-product, $(DEVICE_PATH)/device-rising.mk)
+
+# RisingOS adds properties to the system partition, which the Soong artifact
+# path check of generic_system.mk rejects. Set it here: in device-rising.mk the
+# "relaxed" value inherited from zumapro/aosp_common.mk would win.
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
