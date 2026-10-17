@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
+    <!-- Typical battery capacity in mAh, shown in About phone -->
+    <item name="battery.capacity">5060</item>
     <array name="cpu.clusters.cores">
         <value>4</value>
         <value>3</value>
