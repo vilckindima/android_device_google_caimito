@@ -7,8 +7,6 @@ product/priv-app/SCONE-v69510/SCONE-v69510.apk;PRESIGNED
 
 # AiAi
 product/priv-app/AICorePrebuilt-aicore_20260302.01_RC00/AICorePrebuilt-aicore_20260302.01_RC00.apk;PRESIGNED
-product/priv-app/DeviceIntelligenceNetworkPrebuiltAstrea/DeviceIntelligenceNetworkPrebuiltAstrea.apk;PRESIGNED
-product/priv-app/DevicePersonalizationAiAiPrebuiltPixel2024/DevicePersonalizationAiAiPrebuiltPixel2024.apk;PRESIGNED
 
 # Audio
 product/etc/ambient/matcher_tah.leveldb
@@ -50,30 +48,12 @@ product/etc/libnfc-nci.conf
 
 # Now Playing
 product/app/NowPlayingPrebuilt/NowPlayingPrebuilt.apk;PRESIGNED
-product/etc/default-permissions/default-permissions_nowplaying.xml
 product/etc/sysconfig/nowplaying_app_26q1.xml
 
 # Permissions
 product/etc/permissions/privapp-permissions-google-p.xml:product/etc/permissions/privapp-permissions-google-p-lineage.xml
 product/etc/sysconfig/GoogleCamera_6gb_or_more_ram.xml
-product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
-product/etc/sysconfig/nexus.xml
-product/etc/sysconfig/pixel_experience_2017.xml
-product/etc/sysconfig/pixel_experience_2018.xml
-product/etc/sysconfig/pixel_experience_2019.xml
-product/etc/sysconfig/pixel_experience_2019_midyear.xml
-product/etc/sysconfig/pixel_experience_2020.xml
-product/etc/sysconfig/pixel_experience_2020_midyear.xml
-product/etc/sysconfig/pixel_experience_2021.xml
-product/etc/sysconfig/pixel_experience_2021_midyear.xml
-product/etc/sysconfig/pixel_experience_2022.xml
-product/etc/sysconfig/pixel_experience_2022_midyear.xml
-product/etc/sysconfig/pixel_experience_2023.xml
-product/etc/sysconfig/pixel_experience_2023_midyear.xml
-product/etc/sysconfig/pixel_experience_2024.xml
-product/etc/sysconfig/pixel_experience_2024_midyear.xml
 product/etc/sysconfig/preinstalled-packages-pixel-2024-common.xml
-product/etc/sysconfig/preinstalled_packages_pixel_experience_2021_and_newer.xml
 
 # Radio
 product/etc/default-permissions/default-permissions_com.google.android.apps.carrier.carrierwifi.xml
@@ -98,11 +78,6 @@ product/etc/sysconfig/preinstalled-packages-com.samsung.slsi.telephony.oem.oemri
 product/etc/sysconfig/preinstalled-packages-com.samsung.slsi.telephony.oemril.xml
 
 # Satellite
-product/etc/default-permissions/default-permissions-stargate.xml
-product/etc/permissions/com.google.android.apps.stargate.support.xml
-product/etc/permissions/com.google.android.apps.stargate.xml
-product/etc/sysconfig/preinstalled-packages-product-pixel-2024-and-newer.xml
-product/etc/sysconfig/satellite_sos.xml
 product/priv-app/SatelliteGateway-Phone-v91522000/SatelliteGateway-Phone-v91522000.apk;PRESIGNED
 
 # VZW
@@ -183,13 +158,6 @@ system_ext/priv-app/ShannonRcs/ShannonRcs.apk;PRESIGNED
 system_ext/etc/permissions/privapp-permissions-google-se.xml:system_ext/etc/permissions/privapp-permissions-google-se-lineage.xml
 
 # Quick Share extension
-system_ext/bin/mosey_server
-system_ext/etc/default-permissions/default-permissions-com.google.android.mosey.xml
-system_ext/etc/init/mosey.rc
-system_ext/etc/permissions/privapp-permissions-com.google.android.mosey.xml
-system_ext/etc/vintf/manifest/manifest_mosey.xml
-system_ext/lib64/libmosey_daemon_ffi.so
-system_ext/priv-app/MoseyApp/MoseyApp.apk
 
 # Radio
 system_ext/etc/default-permissions/default-permissions-euiccpixel.xml
@@ -251,3 +219,6 @@ recovery/system/etc/vintf/manifest/android.hardware.boot-service.default_recover
 recovery/system/bin/hw/android.hardware.health-service.zumapro_recovery
 recovery/system/etc/init/android.hardware.health-service.zumapro_recovery.rc
 recovery/system/etc/vintf/manifest/android.hardware.health-service.zumapro.xml:recovery/system/etc/vintf/manifest/android.hardware.health-service.zumapro_recovery.xml
+
+# Pixel Camera
+product/priv-app/GoogleCamera/GoogleCamera.apk;OVERRIDES=Aperture,Camera2;PRESIGNED

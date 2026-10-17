@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# RisingOS Revived 9 (Android 17, seventeen) for caimito (komodo, caiman)
+# RisingOS Revived 9 (Android 17, seventeen) for caimito (komodo, caiman, tokay)
 
 # Maintainer: lunch banner and OFFICIAL/UNOFFICIAL/COMMUNITY build type
 RISING_MAINTAINER := vilckindima
