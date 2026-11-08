@@ -10,3 +10,9 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_caiman.mk \
     $(LOCAL_DIR)/lineage_komodo.mk \
     $(LOCAL_DIR)/lineage_tokay.mk
+
+# Project Infinity X
+PRODUCT_MAKEFILES += \
+    $(LOCAL_DIR)/infinity_caiman.mk \
+    $(LOCAL_DIR)/infinity_komodo.mk \
+    $(LOCAL_DIR)/infinity_tokay.mk
