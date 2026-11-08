@@ -56,4 +56,8 @@ PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
 # Google one. Build mainline from source, as LineageOS does.
 PRODUCT_BUILD_IGNORE_APEX_CONTRIBUTION_CONTENTS := true
 
+# Defined both in the stock blobs and in GMS: install the GMS copy
+PRODUCT_PACKAGES += \
+    AICorePrebuilt-aicore_20260302.01_RC00
+
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
